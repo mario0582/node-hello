@@ -1,8 +1,9 @@
 kind: pipeline
-name: default
+name: nodeapp
 
 steps:
 - name: test
   image: node
+  ports: 3000:3000
   commands:
   - npm start
